@@ -1,0 +1,19 @@
+baseurl = "http://ivanportugal.com/"
+languageCode = "en-us"
+title = "Ramblings of a Software Developer"
+theme = "hugo-theme-casper"
+paginate = 5
+Copyright = "2015 - All Rights Reserved"
+canonifyurls = true
+[params]
+	description = "Hopefully figuring out how to use the latest and greatest in web tech"
+	author = "Ivan Portugal"
+	authorlocation = "Houston, Texas"
+	authorwebsite = "http://ivanportugal.com"
+	githubName = "ivanbportugal"
+
+[[menu.main]]
+  name = "My Blog"
+  weight = -120
+  identifier = "blog"
+  url = "/"

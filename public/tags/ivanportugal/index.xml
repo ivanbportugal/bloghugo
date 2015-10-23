@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ivanportugal on Ramblings of a Software Developer</title>
+    <link>http://localhost:1313/tags/ivanportugal/</link>
+    <description>Recent content in Ivanportugal on Ramblings of a Software Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2015 - All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 22 Oct 2015 16:11:39 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ivanportugal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 22 Oct 2015 16:11:39 -0500</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Just a little about me&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
