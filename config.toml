@@ -13,6 +13,7 @@ canonifyurls = true
 	authorwebsite = "http://ivanportugal.com"
 	githubName = "ivanbportugal"
 	logo = "img/smiley.png"
+	googleAnalyticsUserID = "UA-69208034-1"
 
 [[menu.main]]
   name = "My Blog"
