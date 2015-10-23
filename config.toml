@@ -7,10 +7,12 @@ Copyright = "2015 - All Rights Reserved"
 canonifyurls = true
 [params]
 	description = "Hopefully figuring out how to use the latest and greatest in web tech"
+	cover = "img/IvanSkydiving.jpg"
 	author = "Ivan Portugal"
 	authorlocation = "Houston, Texas"
 	authorwebsite = "http://ivanportugal.com"
 	githubName = "ivanbportugal"
+	logo = "img/smiley.png"
 
 [[menu.main]]
   name = "My Blog"
