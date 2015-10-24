@@ -1,7 +1,7 @@
 baseurl = "http://ivanportugal.com/"
 languageCode = "en-us"
 title = "Ramblings of a Software Developer"
-theme = "hugo-theme-casper"
+theme = "casper"
 paginate = 5
 Copyright = "2015 - All Rights Reserved"
 canonifyurls = true
