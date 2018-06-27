@@ -1,23 +1,23 @@
-baseurl = "http://ivanportugal.com/"
+baseurl = "https://ivanportugal.com/"
 languageCode = "en-us"
 title = "Ramblings of a Software Developer"
 theme = "casper"
 paginate = 5
-Copyright = "2015 - All Rights Reserved"
+Copyright = "2018 - All Rights Reserved"
 canonifyurls = true
 DisqusShortname = "IvanPortugal"
 [params]
 	description = "Hopefully figuring out how to use the latest and greatest in web tech"
 	cover = "img/IvanSkydiving.jpg"
 	author = "Ivan Portugal"
-	authorlocation = "Houston, Texas"
-	authorwebsite = "http://ivanportugal.com"
+	authorlocation = "Charlotte, North Carolina"
+	authorwebsite = "https://ivanportugal.com"
 	githubName = "ivanbportugal"
 	logo = "img/smiley.png"
 	googleAnalyticsUserID = "UA-69208034-1"
 
 [[menu.main]]
-  name = "My Blog"
+  name = "Ivan Portugal Blog"
   weight = -120
   identifier = "blog"
   url = "/"
