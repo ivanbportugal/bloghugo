@@ -1,13 +1,16 @@
 baseurl = "https://ivanportugal.com/"
 languageCode = "en-us"
 title = "Ramblings of a Software Developer"
-theme = "casper"
+theme = "hugo-cactus-theme"
 paginate = 5
 Copyright = "2018 - All Rights Reserved"
 canonifyurls = true
-DisqusShortname = "IvanPortugal"
+disqusShortname = "IvanPortugal"
+googleAnalytics = "UA-69208034-1"
 [params]
-	description = "Hopefully figuring out how to use the latest and greatest in web tech"
+    name = "Ivan Portugal"
+    bio = "web tech enthusiast"
+	description = "web tech enthusiast"
 	cover = "img/IvanSkydiving.jpg"
 	author = "Ivan Portugal"
 	authorlocation = "Charlotte, North Carolina"
@@ -16,8 +19,14 @@ DisqusShortname = "IvanPortugal"
 	logo = "img/smiley.png"
 	googleAnalyticsUserID = "UA-69208034-1"
 
+    iconFont = "mono-social"
+    socialIconStyle = "circle"
+
 [[menu.main]]
-  name = "Ivan Portugal Blog"
-  weight = -120
-  identifier = "blog"
-  url = "/"
+    name = "Ivan Portugal Blog"
+    weight = -120
+    identifier = "blog"
+    url = "/"
+
+[social]
+    linkedin = "https://linkedin.com/in/ivanportugal"
