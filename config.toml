@@ -5,7 +5,7 @@ theme = "hugo-cactus-theme"
 paginate = 5
 Copyright = "2018 - All Rights Reserved"
 canonifyurls = true
-disqusShortname = "IvanPortugal"
+# disqusShortname = "IvanPortugal"
 googleAnalytics = "UA-69208034-1"
 [params]
     name = "Ivan Portugal"
