@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<base href="https://ivanportugal.com/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Ivan Portugal">
+<meta name="description" content="web tech enthusiast">
+<meta name="generator" content="Hugo 0.47" />
+<title>Go kick the web&#39;s butt</title>
+<link rel="shortcut icon" href="https://ivanportugal.com/images/favicon.ico">
+<link rel="stylesheet" href="https://ivanportugal.com/css/style.css">
+<link rel="stylesheet" href="https://ivanportugal.com/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="https://ivanportugal.com/css/monosocialiconsfont.css">
+
+
+
+
+<meta property="og:title" content="Go kick the web&#39;s butt" />
+<meta property="og:description" content="Intro After getting introduced to Go, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.
+Technologies used: - Go - Martini - Nodejs - Grunt - Bower
+Pseudo real-world Go Project
+Why Nodejs too? I love web technologies." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ivanportugal.com/post/go-kick-the-webs-butt/" /><meta property="article:published_time" content="2015-10-31T15:11:05-05:00"/>
+<meta property="article:modified_time" content="2015-10-31T15:11:05-05:00"/>
+
+
+<meta itemprop="name" content="Go kick the web&#39;s butt">
+<meta itemprop="description" content="Intro After getting introduced to Go, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.
+Technologies used: - Go - Martini - Nodejs - Grunt - Bower
+Pseudo real-world Go Project
+Why Nodejs too? I love web technologies.">
+
+
+<meta itemprop="datePublished" content="2015-10-31T15:11:05-05:00" />
+<meta itemprop="dateModified" content="2015-10-31T15:11:05-05:00" />
+<meta itemprop="wordCount" content="904">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Go kick the web&#39;s butt"/>
+<meta name="twitter:description" content="Intro After getting introduced to Go, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.
+Technologies used: - Go - Martini - Nodejs - Grunt - Bower
+Pseudo real-world Go Project
+Why Nodejs too? I love web technologies."/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='https://ivanportugal.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+ 		<a href='https://bsearch.ivanportugal.com/'>BSearch</a>
+  	
+ 		<a href='https://ivanportugal.com/'>Ivan Portugal Blog</a>
+  	
+
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Go kick the web&#39;s butt</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        October 31, 2015
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<h2 id="intro">Intro</h2>
+
+<p>After getting introduced to <a href="https://golang.org/">Go</a>, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do <em>immediately</em>. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.</p>
+
+<p>Technologies used:
+- Go
+    - Martini
+- Nodejs
+- Grunt
+- Bower</p>
+
+<p><a href="https://github.com/ivanbportugal/go-albums">Pseudo real-world Go Project</a></p>
+
+<h2 id="why-nodejs-too">Why Nodejs too?</h2>
+
+<p>I love web technologies. Nodejs has shaped how easy it is to develop projects for the web, including facilitating and supporting popular tools (via Github) like Grunt, Gulp, Bower, SASS, AngularJS, etc&hellip; Since I really like client-side development and I am a huge fan of AngularJS, I decided to make sure that whatever I came up with had this in mind.</p>
+
+<p>Since Go runs and deploys very simply, it shouldn&rsquo;t be difficult to just incorporate it into a nice client-side workflow. So, here&rsquo;s a brief explanation of what I decided to do. I guess you could just click on the Github link above and not read on any further :(</p>
+
+<h2 id="martini">Martini</h2>
+
+<p>After wrestling a teeny bit with the <code>net/http</code> package, I decided to go with a nice router that was fairly-well accepted by the community. It seemed to provide nice facilities for auth too. Here&rsquo;s a snippet of the routing syntax:</p>
+
+<pre><code>// Sets up reasonable defaults for your web app
+var m = martini.Classic()
+
+// CRUDL! Just pass in a callback
+m.Get(`/albums`, server.GetAlbums)
+m.Get(`/albums/:id`, server.GetAlbum)
+m.Post(`/albums`, server.AddAlbum)
+m.Put(`/albums/:id`, server.UpdateAlbum)
+m.Delete(`/albums/:id`, server.DeleteAlbum)
+
+// Inject database
+m.MapTo(server.DBInstance, (*server.DB)(nil))
+// Add the router action
+m.Action(r.Handle)
+
+// GetAlbums might look like this
+func GetAlbums(r *http.Request, enc Encoder, db DB) string {
+	// Get the query string arguments, if any
+	qs := r.URL.Query()
+	band, title, yrs := qs.Get(&quot;band&quot;), qs.Get(&quot;title&quot;), qs.Get(&quot;year&quot;)
+	yri, err := strconv.Atoi(yrs)
+	if err != nil {
+		// If year is not a valid integer, ignore it
+		yri = 0
+	}
+	if band != &quot;&quot; || title != &quot;&quot; || yri != 0 {
+		// At least one filter, use Find()
+		return Must(enc.Encode(toIface(db.Find(band, title, yri))...))
+	}
+	// Otherwise, return all albums
+	return Must(enc.Encode(toIface(db.GetAll())...))
+}
+</code></pre>
+
+<p>The important thing to note here is that the <code>GetAlbums</code> function takes in a <code>db</code> as a parameter because it&rsquo;s &ldquo;injected&rdquo; by the MapTo function. Perhaps Go has dependency injection out of the box that I haven&rsquo;t used but this feature is pretty useful, especially if I&rsquo;d like to swap out for a different database in the future.</p>
+
+<h2 id="nodejs">Nodejs</h2>
+
+<p>Obviously <code>Go</code> does everything for the server so I just need a good client-side workflow. <code>Nodejs</code> is only used for development in this project. <code>Grunt</code> is used to configure different tasks as you might expect for minifying resources, launching live reload, etc&hellip; <code>Bower</code> manages clients-side dependencies. Examples of this are littered all over the web so I won&rsquo;t be discussing this except for the <code>Go</code> part.</p>
+
+<p>Here&rsquo;s a <code>Gruntfile.js</code> snippet:</p>
+
+<pre><code>	grunt.initConfig({
+		goserver: {
+            options: {
+                // Port 3001 is HTTPS enforced
+                port: 3000,
+                // Change this to '0.0.0.0' to access the server from outside.
+                hostname: 'localhost'
+            },
+            livereload: {
+                options: {
+                    staticDirs: ['.tmp', yeomanConfig.app]
+                }
+            },
+            test: {
+                options: {
+                    port: 3002,
+                    staticDirs: ['.tmp', 'test']
+                }
+            },
+            dist: {
+                options: {
+                    port: 3003,
+                    dist: '&lt;%= gobuild.dist.options.dist %&gt;',
+                    staticDirs: [yeomanConfig.dist]
+                }
+            }
+        }
+	});
+
+    function runGo(cmd, args, opts, done) {
+        args.push('-p', opts.port);
+        args.push('-h', opts.hostname);
+        for (var i = 0; i &lt; opts.staticDirs.length - 1; i++) {
+            args.push('-static_dir', opts.staticDirs[i]);
+        }
+        if (opts.staticDirs.length &gt; 0) {
+            args.push(opts.staticDirs[opts.staticDirs.length - 1]);
+        }
+
+        var goProcess = grunt.util.spawn({
+                cmd: cmd,
+                args: args,
+                opts: {
+                    stdio: 'pipe'
+                }
+            },
+            function(error, result, code) {
+                if (error) {
+                    grunt.log.error(String(result));
+                    grunt.fail.fatal('go-server exited with code: ' + code, 3);
+                }
+            }
+        );
+        goProcess.stdout.pipe(process.stdout);
+        goProcess.stderr.pipe(process.stderr);
+        // Wait for spawned server to print something
+        goProcess.stdout.once('data', function() {
+            done();
+        });
+        process.on('exit', function() {
+            grunt.log.writeln('Killing go-server(' + goProcess.pid + ')...');
+            process.kill(-process.pid, 'SIGINT');
+            grunt.log.oklns('Killed go-server');
+        });
+
+    }
+
+    grunt.registerMultiTask('goserver', 'Running go server', function() {
+        var opts = this.options({
+            port: 9000,
+            hostname: 'localhost',
+        });
+        if (opts.dist) {
+            this.async(); // wait forever to keep the server alive
+            runGo(opts.dist, [], opts, function() {});
+        } else {
+            runGo('go', ['run', 'main.go'], opts, this.async());
+        }
+    });
+
+    grunt.registerMultiTask('gobuild', 'Building go server', function() {
+        var opts = this.options({
+            dist: './main',
+            flags: [],
+        });
+
+        var done = this.async();
+        grunt.util.spawn({
+                cmd: 'go',
+                args: ['build', '-o', opts.dist].concat(opts.flags),
+                opts: {
+                    stdio: 'inherit'
+                }
+            },
+            function(error, result, code) {
+                if (error) {
+                    grunt.log.error(String(result));
+                    grunt.fail.fatal('go-build exited with code: ' + code, 3);
+                } else {
+                    done();
+                }
+            }
+        );
+    });
+</code></pre>
+
+<p>Ok that was alot of code. Basically, it just ties <code>Go</code> executions and builds to the <code>Grunt</code> lifecycle. I had some help from other Github projects to put this together.</p>
+
+<h2 id="angularjs">AngularJS</h2>
+
+<p>Yeah, I&rsquo;m an AngularJS (1.x) guy. I really could care less for server-side rendering for most apps because I feel that as browsers get better and better and devices get faster and faster, we can just let rendering be the responsibility of the client. I hate mudding the server-side waters sometimes, so my project is going to serve static resources and publish a HTTP RESTful API.</p>
+
+<p>I suppose this might make it transparent when wanting to hook up different client apps built with/for iOS/Android, Chrome Web, <a href="http://electron.atom.io/">Electron</a>, <a href="https://github.com/miketheprogrammer/go-thrust">Thrust</a> (new Go project), etc&hellip;</p>
+
+<pre><code>    $http.get('/albums').then(function(data){
+        // My albums are in JSON
+        $scope.listings = data;
+    }, function(err){
+        // Some error happened
+    });
+</code></pre>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I guess if you&rsquo;re looking for cutting edge server-side web development I think you should <code>Go</code>, with confidence.</p>
+
+<p><a href="https://github.com/ivanbportugal/go-albums">Go Albums</a></p>
+
+<h3 id="kudos">Kudos</h3>
+
+<ul>
+<li><a href="http://yeoman.io/">Yeoman</a></li>
+<li><a href="https://github.com/rayokota/generator-angular-go-martini">Angular Go Martini</a></li>
+<li><a href="https://github.com/PuerkitoBio/martini-api-example">Martini API Example</a></li>
+</ul>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    
+    <img class="avatar" src="https://ivanportugal.com/images/avatar.png">
+    <div>
+        <span class="dark">Ivan Portugal</span>
+        <span></span>
+    </div>
+    
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fivanportugal.com%2fpost%2fgo-kick-the-webs-butt%2f - Go%20kick%20the%20web%27s%20butt "><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="https://ivanportugal.com/post/discovery/">Discovery<aside class="dates">Oct 22 2015</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://linkedin.com/in/ivanportugal">
+        circlelinkedin
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2018 Ivan Portugal
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ivanportugal.com/js/main.js"></script>
+<script src="https://ivanportugal.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-69208034-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>
