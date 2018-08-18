@@ -1,32 +1,28 @@
-baseurl = "https://ivanportugal.com/"
-languageCode = "en-us"
-title = "Ramblings of a Software Developer"
-theme = "hugo-cactus-theme"
-paginate = 5
 Copyright = "2018 - All Rights Reserved"
+baseurl = "https://ivanportugal.com/"
 canonifyurls = true
-# disqusShortname = "IvanPortugal"
 googleAnalytics = "UA-69208034-1"
-[params]
-    name = "Ivan Portugal"
-    bio = "web tech enthusiast"
-	description = "web tech enthusiast"
-	cover = "img/IvanSkydiving.jpg"
-	author = "Ivan Portugal"
-	authorlocation = "Charlotte, North Carolina"
-	authorwebsite = "https://ivanportugal.com"
-	githubName = "ivanbportugal"
-	logo = "img/smiley.png"
-	googleAnalyticsUserID = "UA-69208034-1"
-
-    iconFont = "mono-social"
-    socialIconStyle = "circle"
-
+languageCode = "en-us"
+paginate = 5
+theme = "hugo-cactus-theme"
+title = "Ramblings of a Software Developer"
 [[menu.main]]
-    name = "Ivan Portugal Blog"
-    weight = -120
-    identifier = "blog"
-    url = "/"
-
+identifier = "blog"
+name = "Ivan Portugal Blog"
+url = "/"
+weight = 1
+[params]
+author = "Ivan Portugal"
+authorlocation = "Charlotte, North Carolina"
+authorwebsite = "https://ivanportugal.com"
+bio = "web tech enthusiast"
+cover = "img/IvanSkydiving.jpg"
+description = "web tech enthusiast"
+githubName = "ivanbportugal"
+googleAnalyticsUserID = "UA-69208034-1"
+iconFont = "mono-social"
+logo = "img/smiley.png"
+name = "Ivan Portugal"
+socialIconStyle = "circle"
 [social]
-    linkedin = "https://linkedin.com/in/ivanportugal"
+linkedin = "https://linkedin.com/in/ivanportugal"
