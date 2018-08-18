@@ -7,6 +7,10 @@ paginate = 5
 theme = "hugo-cactus-theme"
 title = "Ramblings of a Software Developer"
 [[menu.main]]
+name = "BSearch"
+url = "https://bsearch.ivanportugal.com/"
+weight = 1
+[[menu.main]]
 identifier = "blog"
 name = "Ivan Portugal Blog"
 url = "/"
