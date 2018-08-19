@@ -2,6 +2,8 @@
 date = "2015-10-31T15:11:05-05:00"
 title = "Go kick the web's butt"
 
+deprecated = true
+
 +++
 
 ## Intro
@@ -24,7 +26,7 @@ Since Go runs and deploys very simply, it shouldn't be difficult to just incorpo
 ## Martini
 After wrestling a teeny bit with the `net/http` package, I decided to go with a nice router that was fairly-well accepted by the community. It seemed to provide nice facilities for auth too. Here's a snippet of the routing syntax:
 
-```
+```go
 // Sets up reasonable defaults for your web app
 var m = martini.Classic()
 
@@ -65,7 +67,7 @@ The important thing to note here is that the `GetAlbums` function takes in a `db
 Obviously `Go` does everything for the server so I just need a good client-side workflow. `Nodejs` is only used for development in this project. `Grunt` is used to configure different tasks as you might expect for minifying resources, launching live reload, etc... `Bower` manages clients-side dependencies. Examples of this are littered all over the web so I won't be discussing this except for the `Go` part.
 
 Here's a `Gruntfile.js` snippet:
-```
+```javascript
 	grunt.initConfig({
 		goserver: {
             options: {
@@ -178,7 +180,7 @@ Yeah, I'm an AngularJS (1.x) guy. I really could care less for server-side rende
 
 I suppose this might make it transparent when wanting to hook up different client apps built with/for iOS/Android, Chrome Web, [Electron](http://electron.atom.io/), [Thrust](https://github.com/miketheprogrammer/go-thrust) (new Go project), etc...
 
-```
+```javascript
     $http.get('/albums').then(function(data){
         // My albums are in JSON
         $scope.listings = data;
