@@ -3,34 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ivanportugal.com/post/go-kick-the-webs-butt/</loc>
+    <loc>https://ivanportugal.github.io/bloghugo/about/</loc>
+    <lastmod>2018-08-18T19:11:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</loc>
     <lastmod>2015-10-31T15:11:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ivanportugal.com/post/discovery/</loc>
+    <loc>https://ivanportugal.github.io/bloghugo/post/discovery/</loc>
     <lastmod>2015-10-22T15:57:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ivanportugal.com/categories/</loc>
+    <loc>https://ivanportugal.github.io/bloghugo/authors/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.com/post/</loc>
+    <loc>https://ivanportugal.github.io/bloghugo/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.github.io/bloghugo/</loc>
+    <lastmod>2018-08-18T19:11:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.github.io/bloghugo/post/</loc>
     <lastmod>2015-10-31T15:11:05-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.com/</loc>
-    <lastmod>2015-10-31T15:11:05-05:00</lastmod>
+    <loc>https://ivanportugal.github.io/bloghugo/series/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.com/tags/</loc>
+    <loc>https://ivanportugal.github.io/bloghugo/tags/</loc>
     <priority>0</priority>
   </url>
   

@@ -1,93 +1,222 @@
 <!DOCTYPE html>
-<html lang="en-us">
-	<head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<base href="https://ivanportugal.com/">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Ivan Portugal">
-<meta name="description" content="web tech enthusiast">
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Intro After getting introduced to Go, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.
+Technologies used: - Go - Martini - Nodejs - Grunt - Bower
+Pseudo real-world Go Project
+Why Nodejs too? I love web technologies.'>
+<meta name='theme-color' content='#3F89C1'>
+
+<meta property='og:title' content='Go kick the web&#39;s butt • Develicious'>
+<meta property='og:description' content='Intro After getting introduced to Go, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.
+Technologies used: - Go - Martini - Nodejs - Grunt - Bower
+Pseudo real-world Go Project
+Why Nodejs too? I love web technologies.'>
+<meta property='og:url' content='https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/'>
+<meta property='og:site_name' content='Develicious'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:published_time' content='2015-10-31T15:11:05-05:00'/><meta property='article:modified_time' content='2015-10-31T15:11:05-05:00'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@IvanBPortugal'>
+
 <meta name="generator" content="Hugo 0.47" />
-<title>Go kick the web&#39;s butt</title>
-<link rel="shortcut icon" href="https://ivanportugal.com/images/favicon.ico">
-<link rel="stylesheet" href="https://ivanportugal.com/css/style.css">
-<link rel="stylesheet" href="https://ivanportugal.com/css/highlight.css">
+
+  <title>Go kick the web&#39;s butt • Develicious</title>
+  <link rel='canonical' href='https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/'>
+  
+  
+  <link rel='icon' href='/bloghugo/favicon.ico'>
+<link rel='stylesheet' href='/bloghugo/assets/css/main.809149b6.css'><style>
+:root{--color-accent:#3F89C1;}
+</style>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
 
 
+<body class='page type-post has-sidebar'>
 
-<link rel="stylesheet" href="https://ivanportugal.com/css/monosocialiconsfont.css">
+  <div class='site'>
 
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/bloghugo/'>
+        <img src='/bloghugo/images/logo.svg'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Develicious
+    </h2>
+    <div class='desc'>
+    Just a few potentially helpful snippets
+    </div>
+  </header>
 
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
 
-<meta property="og:title" content="Go kick the web&#39;s butt" />
-<meta property="og:description" content="Intro After getting introduced to Go, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.
-Technologies used: - Go - Martini - Nodejs - Grunt - Bower
-Pseudo real-world Go Project
-Why Nodejs too? I love web technologies." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://ivanportugal.com/post/go-kick-the-webs-butt/" /><meta property="article:published_time" content="2015-10-31T15:11:05-05:00"/>
-<meta property="article:modified_time" content="2015-10-31T15:11:05-05:00"/>
+  <form action='/bloghugo/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
 
+</section>
+<section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/ivanbportugal' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/ivanbportugal' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:ivanbportugal@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/ivanportugal' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section></div>
 
-<meta itemprop="name" content="Go kick the web&#39;s butt">
-<meta itemprop="description" content="Intro After getting introduced to Go, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.
-Technologies used: - Go - Martini - Nodejs - Grunt - Bower
-Pseudo real-world Go Project
-Why Nodejs too? I love web technologies.">
+  <div class='sidebar-overlay'></div>
+</div>
 
+    <div class='main'>
 
-<meta itemprop="datePublished" content="2015-10-31T15:11:05-05:00" />
-<meta itemprop="dateModified" content="2015-10-31T15:11:05-05:00" />
-<meta itemprop="wordCount" content="904">
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
-
-
-<meta itemprop="keywords" content="" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Go kick the web&#39;s butt"/>
-<meta name="twitter:description" content="Intro After getting introduced to Go, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.
-Technologies used: - Go - Martini - Nodejs - Grunt - Bower
-Pseudo real-world Go Project
-Why Nodejs too? I love web technologies."/>
-
-
-    </head>
-<body>
-    <nav class="main-nav">
-	
-		<a href='https://ivanportugal.com/'> <span class="arrow">←</span>Home</a>
-	
-
-	
- 		<a href='https://bsearch.ivanportugal.com/'>BSearch</a>
-  	
- 		<a href='https://ivanportugal.com/'>Ivan Portugal Blog</a>
-  	
-
-	
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/bloghugo/'>Home</a>
+      </li><li class='item'>
+        <a href='/bloghugo/about/'>About</a>
+      </li><li class='item'>
+        <a href='https://bsearch.ivanportugal.com/'>BSearch</a>
+      </li></ul>
+  </div>
 </nav>
 
-    <section id="wrapper">
-        
-        
-<article class="post">
-    <header>
-        <h1>Go kick the web&#39;s butt</h1>
-        <h2 class="subtitle"></h2>
-        <h2 class="headline">
-        October 31, 2015
-        <br>
-        
-        </h2>
-    </header>
-    <section id="post-body">
-        
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Develicious</p><p class='desc site-desc'>Just a few potentially helpful snippets</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Go kick the web&#39;s butt</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2015-10-31T15:11:05-05:00'>2015, Oct 31</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+5 mins read
+</span>
+
+
+  
+  
+  <div class="deprecated">This page has been marked as deprecated</div>
+  
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
 
 <h2 id="intro">Intro</h2>
 
-<p>After getting introduced to <a href="https://golang.org/">Go</a>, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do <em>immediately</em>. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.</p>
+<p>After getting introduced to <a href="https://golang.org/" target="_blank">Go</a>, I&rsquo;ve fallen in love&hellip; Without making this corny, I really wanted to explore what the platform/language can do <em>immediately</em>. I&rsquo;m sorta done with Hello World projects and going through examples of the language so I&rsquo;d like to present a more-or-less real-world example.</p>
 
 <p>Technologies used:
 - Go
@@ -96,7 +225,7 @@ Why Nodejs too? I love web technologies."/>
 - Grunt
 - Bower</p>
 
-<p><a href="https://github.com/ivanbportugal/go-albums">Pseudo real-world Go Project</a></p>
+<p><a href="https://github.com/ivanbportugal/go-albums" target="_blank">Pseudo real-world Go Project</a></p>
 
 <h2 id="why-nodejs-too">Why Nodejs too?</h2>
 
@@ -107,41 +236,38 @@ Why Nodejs too? I love web technologies."/>
 <h2 id="martini">Martini</h2>
 
 <p>After wrestling a teeny bit with the <code>net/http</code> package, I decided to go with a nice router that was fairly-well accepted by the community. It seemed to provide nice facilities for auth too. Here&rsquo;s a snippet of the routing syntax:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Sets up reasonable defaults for your web app
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">m</span> = <span style="color:#a6e22e">martini</span>.<span style="color:#a6e22e">Classic</span>()
 
-<pre><code>// Sets up reasonable defaults for your web app
-var m = martini.Classic()
+<span style="color:#75715e">// CRUDL! Just pass in a callback
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#e6db74">`/albums`</span>, <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">GetAlbums</span>)
+<span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#e6db74">`/albums/:id`</span>, <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">GetAlbum</span>)
+<span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Post</span>(<span style="color:#e6db74">`/albums`</span>, <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">AddAlbum</span>)
+<span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Put</span>(<span style="color:#e6db74">`/albums/:id`</span>, <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">UpdateAlbum</span>)
+<span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Delete</span>(<span style="color:#e6db74">`/albums/:id`</span>, <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">DeleteAlbum</span>)
 
-// CRUDL! Just pass in a callback
-m.Get(`/albums`, server.GetAlbums)
-m.Get(`/albums/:id`, server.GetAlbum)
-m.Post(`/albums`, server.AddAlbum)
-m.Put(`/albums/:id`, server.UpdateAlbum)
-m.Delete(`/albums/:id`, server.DeleteAlbum)
+<span style="color:#75715e">// Inject database
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">MapTo</span>(<span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">DBInstance</span>, (<span style="color:#f92672">*</span><span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">DB</span>)(<span style="color:#66d9ef">nil</span>))
+<span style="color:#75715e">// Add the router action
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Action</span>(<span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">Handle</span>)
 
-// Inject database
-m.MapTo(server.DBInstance, (*server.DB)(nil))
-// Add the router action
-m.Action(r.Handle)
-
-// GetAlbums might look like this
-func GetAlbums(r *http.Request, enc Encoder, db DB) string {
-	// Get the query string arguments, if any
-	qs := r.URL.Query()
-	band, title, yrs := qs.Get(&quot;band&quot;), qs.Get(&quot;title&quot;), qs.Get(&quot;year&quot;)
-	yri, err := strconv.Atoi(yrs)
-	if err != nil {
-		// If year is not a valid integer, ignore it
-		yri = 0
+<span style="color:#75715e">// GetAlbums might look like this
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">GetAlbums</span>(<span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>, <span style="color:#a6e22e">enc</span> <span style="color:#a6e22e">Encoder</span>, <span style="color:#a6e22e">db</span> <span style="color:#a6e22e">DB</span>) <span style="color:#66d9ef">string</span> {
+	<span style="color:#75715e">// Get the query string arguments, if any
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">qs</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">Query</span>()
+	<span style="color:#a6e22e">band</span>, <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">yrs</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">qs</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#e6db74">&#34;band&#34;</span>), <span style="color:#a6e22e">qs</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#e6db74">&#34;title&#34;</span>), <span style="color:#a6e22e">qs</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#e6db74">&#34;year&#34;</span>)
+	<span style="color:#a6e22e">yri</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Atoi</span>(<span style="color:#a6e22e">yrs</span>)
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#75715e">// If year is not a valid integer, ignore it
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">yri</span> = <span style="color:#ae81ff">0</span>
 	}
-	if band != &quot;&quot; || title != &quot;&quot; || yri != 0 {
-		// At least one filter, use Find()
-		return Must(enc.Encode(toIface(db.Find(band, title, yri))...))
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">band</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">title</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">yri</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span> {
+		<span style="color:#75715e">// At least one filter, use Find()
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Must</span>(<span style="color:#a6e22e">enc</span>.<span style="color:#a6e22e">Encode</span>(<span style="color:#a6e22e">toIface</span>(<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">Find</span>(<span style="color:#a6e22e">band</span>, <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">yri</span>))<span style="color:#f92672">...</span>))
 	}
-	// Otherwise, return all albums
-	return Must(enc.Encode(toIface(db.GetAll())...))
-}
-</code></pre>
-
+	<span style="color:#75715e">// Otherwise, return all albums
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Must</span>(<span style="color:#a6e22e">enc</span>.<span style="color:#a6e22e">Encode</span>(<span style="color:#a6e22e">toIface</span>(<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">GetAll</span>())<span style="color:#f92672">...</span>))
+}</code></pre></div>
 <p>The important thing to note here is that the <code>GetAlbums</code> function takes in a <code>db</code> as a parameter because it&rsquo;s &ldquo;injected&rdquo; by the MapTo function. Perhaps Go has dependency injection out of the box that I haven&rsquo;t used but this feature is pretty useful, especially if I&rsquo;d like to swap out for a different database in the future.</p>
 
 <h2 id="nodejs">Nodejs</h2>
@@ -149,229 +275,245 @@ func GetAlbums(r *http.Request, enc Encoder, db DB) string {
 <p>Obviously <code>Go</code> does everything for the server so I just need a good client-side workflow. <code>Nodejs</code> is only used for development in this project. <code>Grunt</code> is used to configure different tasks as you might expect for minifying resources, launching live reload, etc&hellip; <code>Bower</code> manages clients-side dependencies. Examples of this are littered all over the web so I won&rsquo;t be discussing this except for the <code>Go</code> part.</p>
 
 <p>Here&rsquo;s a <code>Gruntfile.js</code> snippet:</p>
-
-<pre><code>	grunt.initConfig({
-		goserver: {
-            options: {
-                // Port 3001 is HTTPS enforced
-                port: 3000,
-                // Change this to '0.0.0.0' to access the server from outside.
-                hostname: 'localhost'
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">	<span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">initConfig</span>({
+		<span style="color:#a6e22e">goserver</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                <span style="color:#75715e">// Port 3001 is HTTPS enforced
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3000</span>,
+                <span style="color:#75715e">// Change this to &#39;0.0.0.0&#39; to access the server from outside.
+</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">hostname</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;localhost&#39;</span>
             },
-            livereload: {
-                options: {
-                    staticDirs: ['.tmp', yeomanConfig.app]
+            <span style="color:#a6e22e">livereload</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                    <span style="color:#a6e22e">staticDirs</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;.tmp&#39;</span>, <span style="color:#a6e22e">yeomanConfig</span>.<span style="color:#a6e22e">app</span>]
                 }
             },
-            test: {
-                options: {
-                    port: 3002,
-                    staticDirs: ['.tmp', 'test']
+            <span style="color:#a6e22e">test</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                    <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3002</span>,
+                    <span style="color:#a6e22e">staticDirs</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;.tmp&#39;</span>, <span style="color:#e6db74">&#39;test&#39;</span>]
                 }
             },
-            dist: {
-                options: {
-                    port: 3003,
-                    dist: '&lt;%= gobuild.dist.options.dist %&gt;',
-                    staticDirs: [yeomanConfig.dist]
+            <span style="color:#a6e22e">dist</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+                    <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3003</span>,
+                    <span style="color:#a6e22e">dist</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&lt;%= gobuild.dist.options.dist %&gt;&#39;</span>,
+                    <span style="color:#a6e22e">staticDirs</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">yeomanConfig</span>.<span style="color:#a6e22e">dist</span>]
                 }
             }
         }
 	});
 
-    function runGo(cmd, args, opts, done) {
-        args.push('-p', opts.port);
-        args.push('-h', opts.hostname);
-        for (var i = 0; i &lt; opts.staticDirs.length - 1; i++) {
-            args.push('-static_dir', opts.staticDirs[i]);
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">runGo</span>(<span style="color:#a6e22e">cmd</span>, <span style="color:#a6e22e">args</span>, <span style="color:#a6e22e">opts</span>, <span style="color:#a6e22e">done</span>) {
+        <span style="color:#a6e22e">args</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">&#39;-p&#39;</span>, <span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">port</span>);
+        <span style="color:#a6e22e">args</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">&#39;-h&#39;</span>, <span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">hostname</span>);
+        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">staticDirs</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+            <span style="color:#a6e22e">args</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">&#39;-static_dir&#39;</span>, <span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">staticDirs</span>[<span style="color:#a6e22e">i</span>]);
         }
-        if (opts.staticDirs.length &gt; 0) {
-            args.push(opts.staticDirs[opts.staticDirs.length - 1]);
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">staticDirs</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+            <span style="color:#a6e22e">args</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">staticDirs</span>[<span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">staticDirs</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]);
         }
 
-        var goProcess = grunt.util.spawn({
-                cmd: cmd,
-                args: args,
-                opts: {
-                    stdio: 'pipe'
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">goProcess</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">util</span>.<span style="color:#a6e22e">spawn</span>({
+                <span style="color:#a6e22e">cmd</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">cmd</span>,
+                <span style="color:#a6e22e">args</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">args</span>,
+                <span style="color:#a6e22e">opts</span><span style="color:#f92672">:</span> {
+                    <span style="color:#a6e22e">stdio</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;pipe&#39;</span>
                 }
             },
-            function(error, result, code) {
-                if (error) {
-                    grunt.log.error(String(result));
-                    grunt.fail.fatal('go-server exited with code: ' + code, 3);
+            <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">error</span>, <span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">code</span>) {
+                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error</span>) {
+                    <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">error</span>(String(<span style="color:#a6e22e">result</span>));
+                    <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">fail</span>.<span style="color:#a6e22e">fatal</span>(<span style="color:#e6db74">&#39;go-server exited with code: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">code</span>, <span style="color:#ae81ff">3</span>);
                 }
             }
         );
-        goProcess.stdout.pipe(process.stdout);
-        goProcess.stderr.pipe(process.stderr);
-        // Wait for spawned server to print something
-        goProcess.stdout.once('data', function() {
-            done();
+        <span style="color:#a6e22e">goProcess</span>.<span style="color:#a6e22e">stdout</span>.<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
+        <span style="color:#a6e22e">goProcess</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>);
+        <span style="color:#75715e">// Wait for spawned server to print something
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">goProcess</span>.<span style="color:#a6e22e">stdout</span>.<span style="color:#a6e22e">once</span>(<span style="color:#e6db74">&#39;data&#39;</span>, <span style="color:#66d9ef">function</span>() {
+            <span style="color:#a6e22e">done</span>();
         });
-        process.on('exit', function() {
-            grunt.log.writeln('Killing go-server(' + goProcess.pid + ')...');
-            process.kill(-process.pid, 'SIGINT');
-            grunt.log.oklns('Killed go-server');
+        <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;exit&#39;</span>, <span style="color:#66d9ef">function</span>() {
+            <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">writeln</span>(<span style="color:#e6db74">&#39;Killing go-server(&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">goProcess</span>.<span style="color:#a6e22e">pid</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;)...&#39;</span>);
+            <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">kill</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">pid</span>, <span style="color:#e6db74">&#39;SIGINT&#39;</span>);
+            <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">oklns</span>(<span style="color:#e6db74">&#39;Killed go-server&#39;</span>);
         });
 
     }
 
-    grunt.registerMultiTask('goserver', 'Running go server', function() {
-        var opts = this.options({
-            port: 9000,
-            hostname: 'localhost',
+    <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">registerMultiTask</span>(<span style="color:#e6db74">&#39;goserver&#39;</span>, <span style="color:#e6db74">&#39;Running go server&#39;</span>, <span style="color:#66d9ef">function</span>() {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">opts</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">options</span>({
+            <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">9000</span>,
+            <span style="color:#a6e22e">hostname</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;localhost&#39;</span>,
         });
-        if (opts.dist) {
-            this.async(); // wait forever to keep the server alive
-            runGo(opts.dist, [], opts, function() {});
-        } else {
-            runGo('go', ['run', 'main.go'], opts, this.async());
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">dist</span>) {
+            <span style="color:#66d9ef">this</span>.<span style="color:#66d9ef">async</span>(); <span style="color:#75715e">// wait forever to keep the server alive
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">runGo</span>(<span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">dist</span>, [], <span style="color:#a6e22e">opts</span>, <span style="color:#66d9ef">function</span>() {});
+        } <span style="color:#66d9ef">else</span> {
+            <span style="color:#a6e22e">runGo</span>(<span style="color:#e6db74">&#39;go&#39;</span>, [<span style="color:#e6db74">&#39;run&#39;</span>, <span style="color:#e6db74">&#39;main.go&#39;</span>], <span style="color:#a6e22e">opts</span>, <span style="color:#66d9ef">this</span>.<span style="color:#66d9ef">async</span>());
         }
     });
 
-    grunt.registerMultiTask('gobuild', 'Building go server', function() {
-        var opts = this.options({
-            dist: './main',
-            flags: [],
+    <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">registerMultiTask</span>(<span style="color:#e6db74">&#39;gobuild&#39;</span>, <span style="color:#e6db74">&#39;Building go server&#39;</span>, <span style="color:#66d9ef">function</span>() {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">opts</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">options</span>({
+            <span style="color:#a6e22e">dist</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./main&#39;</span>,
+            <span style="color:#a6e22e">flags</span><span style="color:#f92672">:</span> [],
         });
 
-        var done = this.async();
-        grunt.util.spawn({
-                cmd: 'go',
-                args: ['build', '-o', opts.dist].concat(opts.flags),
-                opts: {
-                    stdio: 'inherit'
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">done</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#66d9ef">async</span>();
+        <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">util</span>.<span style="color:#a6e22e">spawn</span>({
+                <span style="color:#a6e22e">cmd</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;go&#39;</span>,
+                <span style="color:#a6e22e">args</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;build&#39;</span>, <span style="color:#e6db74">&#39;-o&#39;</span>, <span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">dist</span>].<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">opts</span>.<span style="color:#a6e22e">flags</span>),
+                <span style="color:#a6e22e">opts</span><span style="color:#f92672">:</span> {
+                    <span style="color:#a6e22e">stdio</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;inherit&#39;</span>
                 }
             },
-            function(error, result, code) {
-                if (error) {
-                    grunt.log.error(String(result));
-                    grunt.fail.fatal('go-build exited with code: ' + code, 3);
-                } else {
-                    done();
+            <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">error</span>, <span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">code</span>) {
+                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error</span>) {
+                    <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">error</span>(String(<span style="color:#a6e22e">result</span>));
+                    <span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">fail</span>.<span style="color:#a6e22e">fatal</span>(<span style="color:#e6db74">&#39;go-build exited with code: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">code</span>, <span style="color:#ae81ff">3</span>);
+                } <span style="color:#66d9ef">else</span> {
+                    <span style="color:#a6e22e">done</span>();
                 }
             }
         );
     });
-</code></pre>
-
+</code></pre></div>
 <p>Ok that was alot of code. Basically, it just ties <code>Go</code> executions and builds to the <code>Grunt</code> lifecycle. I had some help from other Github projects to put this together.</p>
 
 <h2 id="angularjs">AngularJS</h2>
 
 <p>Yeah, I&rsquo;m an AngularJS (1.x) guy. I really could care less for server-side rendering for most apps because I feel that as browsers get better and better and devices get faster and faster, we can just let rendering be the responsibility of the client. I hate mudding the server-side waters sometimes, so my project is going to serve static resources and publish a HTTP RESTful API.</p>
 
-<p>I suppose this might make it transparent when wanting to hook up different client apps built with/for iOS/Android, Chrome Web, <a href="http://electron.atom.io/">Electron</a>, <a href="https://github.com/miketheprogrammer/go-thrust">Thrust</a> (new Go project), etc&hellip;</p>
-
-<pre><code>    $http.get('/albums').then(function(data){
-        // My albums are in JSON
-        $scope.listings = data;
-    }, function(err){
-        // Some error happened
-    });
-</code></pre>
-
+<p>I suppose this might make it transparent when wanting to hook up different client apps built with/for iOS/Android, Chrome Web, <a href="http://electron.atom.io/" target="_blank">Electron</a>, <a href="https://github.com/miketheprogrammer/go-thrust" target="_blank">Thrust</a> (new Go project), etc&hellip;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    <span style="color:#a6e22e">$http</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/albums&#39;</span>).<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
+        <span style="color:#75715e">// My albums are in JSON
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">$scope</span>.<span style="color:#a6e22e">listings</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>;
+    }, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">err</span>){
+        <span style="color:#75715e">// Some error happened
+</span><span style="color:#75715e"></span>    });
+</code></pre></div>
 <h2 id="conclusion">Conclusion</h2>
 
 <p>I guess if you&rsquo;re looking for cutting edge server-side web development I think you should <code>Go</code>, with confidence.</p>
 
-<p><a href="https://github.com/ivanbportugal/go-albums">Go Albums</a></p>
+<p><a href="https://github.com/ivanbportugal/go-albums" target="_blank">Go Albums</a></p>
 
 <h3 id="kudos">Kudos</h3>
 
 <ul>
-<li><a href="http://yeoman.io/">Yeoman</a></li>
-<li><a href="https://github.com/rayokota/generator-angular-go-martini">Angular Go Martini</a></li>
-<li><a href="https://github.com/PuerkitoBio/martini-api-example">Martini API Example</a></li>
+<li><a href="http://yeoman.io/" target="_blank">Yeoman</a></li>
+<li><a href="https://github.com/rayokota/generator-angular-go-martini" target="_blank">Angular Go Martini</a></li>
+<li><a href="https://github.com/PuerkitoBio/martini-api-example" target="_blank">Martini API Example</a></li>
 </ul>
-
-    </section>
-</article>
-
-<footer id="post-meta" class="clearfix">
-    
-    <img class="avatar" src="https://ivanportugal.com/images/avatar.png">
-    <div>
-        <span class="dark">Ivan Portugal</span>
-        <span></span>
-    </div>
-    
-    <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fivanportugal.com%2fpost%2fgo-kick-the-webs-butt%2f - Go%20kick%20the%20web%27s%20butt "><span class="icon-twitter"> tweet</span></a>
-
-<a class="facebook" href="#" onclick="
-    window.open(
-      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-      'facebook-share-dialog',
-      'width=626,height=436');
-    return false;"><span class="icon-facebook-rect"> Share</span>
-</a>
-
-    </section>
-</footer>
-
-
-
-<ul id="post-list" class="archive readmore">
-    <h3>Read more</h3>
-
-    
-    
-    
-        <li>
-            <a href="https://ivanportugal.com/post/discovery/">Discovery<aside class="dates">Oct 22 2015</aside></a>
-        </li>
-    
-</ul>
-
-
-
-        <footer id="footer">
-    
-        <div id="social">
-
-	
-	
-    
-    <a class="symbol" href="https://linkedin.com/in/ivanportugal">
-        circlelinkedin
-    </a>
-    
-
 
 </div>
 
-    
-    <p class="small">
-    
-        © Copyright 2018 Ivan Portugal
-    
-    </p>
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  
+  </div>
 </footer>
 
-    </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://ivanportugal.com/js/main.js"></script>
-<script src="https://ivanportugal.com/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/bloghugo/post/discovery/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Discovery</a>
+    </div></div>
+</nav>
 
 
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-69208034-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/ivanbportugal' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/ivanbportugal' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:ivanbportugal@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/ivanportugal' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2018 Ivan Portugal All Rights Reserved</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='https:\/\/ivanportugal.github.io\/bloghugo\/assets\/js\/'</script>
+
+<script src='https://ivanportugal.github.io/bloghugo/assets/js/main.68cb493a.js'></script>
+
 
 
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

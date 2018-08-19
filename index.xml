@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ramblings of a Software Developer</title>
-    <link>https://ivanportugal.com/</link>
-    <description>Recent content on Ramblings of a Software Developer</description>
+    <title>Develicious</title>
+    <link>https://ivanportugal.github.io/bloghugo/</link>
+    <description>Recent content on Develicious</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>2018 - All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 31 Oct 2015 15:11:05 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 18 Aug 2018 19:11:39 +0000</lastBuildDate>
     
-	<atom:link href="https://ivanportugal.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ivanportugal.github.io/bloghugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>About</title>
+      <link>https://ivanportugal.github.io/bloghugo/about/</link>
+      <pubDate>Sat, 18 Aug 2018 19:11:39 +0000</pubDate>
+      
+      <guid>https://ivanportugal.github.io/bloghugo/about/</guid>
+      <description>Skills
+Angular, HTML5, SASS, CSS3, Java, C#, .NET MVC, Sql Server 2016, RabbitMQ, Oracle SQL, Java Spring Boot, Maven, Jenkins, Git.
+Goals
+To continue to cultivate my passion for web technologies and make a tremendous impact wherever I work.
+Specialties
+UI Development: Angular 6+, PWA, Ionic, SASS/CSS3, HTML5.
+.NET MVC, Java Spring Boot.</description>
+    </item>
+    
+    <item>
       <title>Go kick the web&#39;s butt</title>
-      <link>https://ivanportugal.com/post/go-kick-the-webs-butt/</link>
+      <link>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</link>
       <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.com/post/go-kick-the-webs-butt/</guid>
+      <guid>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</guid>
       <description>Intro After getting introduced to Go, I&amp;rsquo;ve fallen in love&amp;hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&amp;rsquo;m sorta done with Hello World projects and going through examples of the language so I&amp;rsquo;d like to present a more-or-less real-world example.
 Technologies used: - Go - Martini - Nodejs - Grunt - Bower
 Pseudo real-world Go Project
@@ -26,10 +39,10 @@ Why Nodejs too? I love web technologies.</description>
     
     <item>
       <title>Discovery</title>
-      <link>https://ivanportugal.com/post/discovery/</link>
+      <link>https://ivanportugal.github.io/bloghugo/post/discovery/</link>
       <pubDate>Thu, 22 Oct 2015 15:57:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.com/post/discovery/</guid>
+      <guid>https://ivanportugal.github.io/bloghugo/post/discovery/</guid>
       <description>Well it looks like I keep starting new blogs over and over again but really I’m just playing around with what I think is neat. Since I love web technologies, fiddling around with Ghost, Medium, and other “cutting edge” blog platforms is really just a matter of self-discovery. I think I’ve settled on HUGO for the long term but we will see if someone comes up with something truly revolutionary in the future that will force me to reconsider.</description>
     </item>
     

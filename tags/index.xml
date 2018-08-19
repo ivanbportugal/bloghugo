@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ramblings of a Software Developer</title>
-    <link>https://ivanportugal.com/tags/</link>
-    <description>Recent content in Tags on Ramblings of a Software Developer</description>
+    <title>Tags on Develicious</title>
+    <link>https://ivanportugal.github.io/bloghugo/tags/</link>
+    <description>Recent content in Tags on Develicious</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>2018 - All Rights Reserved</copyright>
     
-	<atom:link href="https://ivanportugal.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ivanportugal.github.io/bloghugo/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
