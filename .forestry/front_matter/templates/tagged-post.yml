@@ -17,3 +17,5 @@ fields:
   label: tags
   name: tags
   description: Tags are searchable
+pages:
+- content/post/git-log-goodies.md
