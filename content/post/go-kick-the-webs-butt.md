@@ -1,7 +1,7 @@
 +++
 date = "2015-10-31T15:11:05-05:00"
 title = "Go kick the web's butt"
-tags = ["github", "nodejs", "angular", "golang", "javascript", "martini"]
+tags = ["git", "nodejs", "angular", "golang", "javascript", "martini"]
 author = "Ivan Portugal"
 
 deprecated = true

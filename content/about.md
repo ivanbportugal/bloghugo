@@ -8,12 +8,13 @@ title = "About"
 weight = 2
 
 +++
-Skills  
+
+- Skills  
 Angular, HTML5, SASS, CSS3, Java, C#, .NET MVC, Sql Server 2016, RabbitMQ, Oracle SQL, Java Spring Boot, Maven, Jenkins, Git.  
   
-Goals  
+- Goals  
 To continue to cultivate my passion for web technologies and make a tremendous impact wherever I work.  
   
-Specialties  
+- Specialties  
 UI Development: Angular 6+, PWA, Ionic, SASS/CSS3, HTML5.  
 .NET MVC, Java Spring Boot.
