@@ -3,120 +3,120 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/post/git-log-goodies/</loc>
+    <loc>https://ivanportugal.com/post/git-log-goodies/</loc>
     <lastmod>2018-08-20T00:35:13+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/about/</loc>
+    <loc>https://ivanportugal.com/about/</loc>
     <lastmod>2018-08-18T19:11:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</loc>
+    <loc>https://ivanportugal.com/post/go-kick-the-webs-butt/</loc>
     <lastmod>2015-10-31T15:11:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/post/discovery/</loc>
+    <loc>https://ivanportugal.com/post/discovery/</loc>
     <lastmod>2015-10-22T15:57:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/angular/</loc>
+    <loc>https://ivanportugal.com/tags/angular/</loc>
     <lastmod>2015-10-31T15:11:05-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/authors/</loc>
+    <loc>https://ivanportugal.com/authors/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/blog/</loc>
-    <lastmod>2015-10-22T15:57:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivanportugal.github.io/bloghugo/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivanportugal.github.io/bloghugo/</loc>
-    <lastmod>2018-08-20T00:35:13+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/discovery/</loc>
+    <loc>https://ivanportugal.com/tags/blog/</loc>
     <lastmod>2015-10-22T15:57:05-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/git/</loc>
+    <loc>https://ivanportugal.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/</loc>
     <lastmod>2018-08-20T00:35:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/golang/</loc>
-    <lastmod>2015-10-31T15:11:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/graph/</loc>
-    <lastmod>2018-08-20T00:35:13+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/hugo/</loc>
+    <loc>https://ivanportugal.com/tags/discovery/</loc>
     <lastmod>2015-10-22T15:57:05-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/javascript/</loc>
-    <lastmod>2015-10-31T15:11:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/log/</loc>
+    <loc>https://ivanportugal.com/tags/git/</loc>
     <lastmod>2018-08-20T00:35:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/martini/</loc>
+    <loc>https://ivanportugal.com/tags/golang/</loc>
     <lastmod>2015-10-31T15:11:05-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/nodejs/</loc>
-    <lastmod>2015-10-31T15:11:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivanportugal.github.io/bloghugo/post/</loc>
+    <loc>https://ivanportugal.com/tags/graph/</loc>
     <lastmod>2018-08-20T00:35:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/series/</loc>
+    <loc>https://ivanportugal.com/tags/hugo/</loc>
+    <lastmod>2015-10-22T15:57:05-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/</loc>
+    <loc>https://ivanportugal.com/tags/javascript/</loc>
+    <lastmod>2015-10-31T15:11:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/tags/log/</loc>
+    <lastmod>2018-08-20T00:35:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/tags/martini/</loc>
+    <lastmod>2015-10-31T15:11:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/tags/nodejs/</loc>
+    <lastmod>2015-10-31T15:11:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/post/</loc>
+    <lastmod>2018-08-20T00:35:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/tags/</loc>
     <lastmod>2015-10-31T15:11:05-05:00</lastmod>
     <priority>0</priority>
   </url>

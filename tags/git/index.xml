@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on Develicious</title>
-    <link>https://ivanportugal.github.io/bloghugo/tags/git/</link>
+    <link>https://ivanportugal.com/tags/git/</link>
     <description>Recent content in Git on Develicious</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 20 Aug 2018 00:35:13 +0000</lastBuildDate>
     
-	<atom:link href="https://ivanportugal.github.io/bloghugo/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ivanportugal.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Git Log Goodies</title>
-      <link>https://ivanportugal.github.io/bloghugo/post/git-log-goodies/</link>
+      <link>https://ivanportugal.com/post/git-log-goodies/</link>
       <pubDate>Mon, 20 Aug 2018 00:35:13 +0000</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/post/git-log-goodies/</guid>
+      <guid>https://ivanportugal.com/post/git-log-goodies/</guid>
       <description>I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of &amp;ldquo;capability ceiling&amp;rdquo;&amp;hellip; There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: Git Guis
 However, the command line is significantly more powerful. Here is a handy-fancy git log with a graph. Add this to your .gitconfig:
 [alias] lg1 = log --graph --all --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&amp;#39; --abbrev-commit --date=relative lg2 = log --graph --all --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&amp;#39;&amp;#39; %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&amp;#39; --abbrev-commit Then, try it out!</description>
@@ -23,10 +23,10 @@ However, the command line is significantly more powerful. Here is a handy-fancy 
     
     <item>
       <title>Go kick the web&#39;s butt</title>
-      <link>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</link>
+      <link>https://ivanportugal.com/post/go-kick-the-webs-butt/</link>
       <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</guid>
+      <guid>https://ivanportugal.com/post/go-kick-the-webs-butt/</guid>
       <description>Intro After getting introduced to Go, I&amp;rsquo;ve fallen in love&amp;hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&amp;rsquo;m sorta done with Hello World projects and going through examples of the language so I&amp;rsquo;d like to present a more-or-less real-world example.
 Technologies used: - Go - Martini - Nodejs - Grunt - Bower
 Pseudo real-world Go Project

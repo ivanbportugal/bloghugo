@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Develicious</title>
-    <link>https://ivanportugal.github.io/bloghugo/tags/javascript/</link>
+    <link>https://ivanportugal.com/tags/javascript/</link>
     <description>Recent content in Javascript on Develicious</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 31 Oct 2015 15:11:05 -0500</lastBuildDate>
     
-	<atom:link href="https://ivanportugal.github.io/bloghugo/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ivanportugal.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Go kick the web&#39;s butt</title>
-      <link>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</link>
+      <link>https://ivanportugal.com/post/go-kick-the-webs-butt/</link>
       <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</guid>
+      <guid>https://ivanportugal.com/post/go-kick-the-webs-butt/</guid>
       <description>Intro After getting introduced to Go, I&amp;rsquo;ve fallen in love&amp;hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&amp;rsquo;m sorta done with Hello World projects and going through examples of the language so I&amp;rsquo;d like to present a more-or-less real-world example.
 Technologies used: - Go - Martini - Nodejs - Grunt - Bower
 Pseudo real-world Go Project

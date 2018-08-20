@@ -2,110 +2,110 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Develicious</title>
-    <link>https://ivanportugal.github.io/bloghugo/tags/</link>
+    <link>https://ivanportugal.com/tags/</link>
     <description>Recent content in Tags on Develicious</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 31 Oct 2015 15:11:05 -0500</lastBuildDate>
     
-	<atom:link href="https://ivanportugal.github.io/bloghugo/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ivanportugal.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Angular</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/angular/</link>
+      <link>https://ivanportugal.com/tags/angular/</link>
       <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/angular/</guid>
+      <guid>https://ivanportugal.com/tags/angular/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/blog/</link>
+      <link>https://ivanportugal.com/tags/blog/</link>
       <pubDate>Thu, 22 Oct 2015 15:57:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/blog/</guid>
+      <guid>https://ivanportugal.com/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Discovery</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/discovery/</link>
+      <link>https://ivanportugal.com/tags/discovery/</link>
       <pubDate>Thu, 22 Oct 2015 15:57:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/discovery/</guid>
+      <guid>https://ivanportugal.com/tags/discovery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/git/</link>
+      <link>https://ivanportugal.com/tags/git/</link>
       <pubDate>Mon, 20 Aug 2018 00:35:13 +0000</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/git/</guid>
+      <guid>https://ivanportugal.com/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/golang/</link>
+      <link>https://ivanportugal.com/tags/golang/</link>
       <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/golang/</guid>
+      <guid>https://ivanportugal.com/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Graph</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/graph/</link>
+      <link>https://ivanportugal.com/tags/graph/</link>
       <pubDate>Mon, 20 Aug 2018 00:35:13 +0000</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/graph/</guid>
+      <guid>https://ivanportugal.com/tags/graph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/hugo/</link>
+      <link>https://ivanportugal.com/tags/hugo/</link>
       <pubDate>Thu, 22 Oct 2015 15:57:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/hugo/</guid>
+      <guid>https://ivanportugal.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/javascript/</link>
+      <link>https://ivanportugal.com/tags/javascript/</link>
       <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/javascript/</guid>
+      <guid>https://ivanportugal.com/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Log</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/log/</link>
+      <link>https://ivanportugal.com/tags/log/</link>
       <pubDate>Mon, 20 Aug 2018 00:35:13 +0000</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/log/</guid>
+      <guid>https://ivanportugal.com/tags/log/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Martini</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/martini/</link>
+      <link>https://ivanportugal.com/tags/martini/</link>
       <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/martini/</guid>
+      <guid>https://ivanportugal.com/tags/martini/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nodejs</title>
-      <link>https://ivanportugal.github.io/bloghugo/tags/nodejs/</link>
+      <link>https://ivanportugal.com/tags/nodejs/</link>
       <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
       
-      <guid>https://ivanportugal.github.io/bloghugo/tags/nodejs/</guid>
+      <guid>https://ivanportugal.com/tags/nodejs/</guid>
       <description></description>
     </item>
     
