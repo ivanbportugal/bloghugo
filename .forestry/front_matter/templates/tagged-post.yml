@@ -1,0 +1,19 @@
+---
+label: Tagged Post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: author
+  label: Author
+  description: Author of this post
+- type: datetime
+  name: post_date
+  label: Post Date
+  description: Metadata for a given post
+  config:
+    required: true
+- type: tag_list
+  label: tags
+  name: tags
+  description: Tags are searchable
