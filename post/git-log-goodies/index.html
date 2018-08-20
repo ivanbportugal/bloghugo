@@ -4,21 +4,23 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Just a few potentially helpful snippets'>
+<meta name='description' content='I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of &ldquo;capability ceiling:&hellip; There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: https://git-scm.com/download/gui/windows
+However, the command line is significantly more powerful. Here is a handy-fancy git log with a graph. Add this to your .gitconfig:
+[alias] lg1 = log --graph --all --format=format:&#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&#39; --abbrev-commit --date=relative lg2 = log --graph --all --format=format:&#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&#39;&#39; %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&#39; --abbrev-commit  Then, try it out!'>
 <meta name='theme-color' content='#3F89C1'>
 
-<meta property='og:title' content='Posts • Develicious'>
-<meta property='og:description' content='Just a few potentially helpful snippets'>
-<meta property='og:url' content='https://ivanportugal.github.io/bloghugo/post/'>
+<meta property='og:title' content='Git Log Goodies • Develicious'>
+<meta property='og:description' content='I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of &ldquo;capability ceiling:&hellip; There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: https://git-scm.com/download/gui/windows
+However, the command line is significantly more powerful. Here is a handy-fancy git log with a graph. Add this to your .gitconfig:
+[alias] lg1 = log --graph --all --format=format:&#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&#39; --abbrev-commit --date=relative lg2 = log --graph --all --format=format:&#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&#39;&#39; %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&#39; --abbrev-commit  Then, try it out!'>
+<meta property='og:url' content='https://ivanportugal.github.io/bloghugo/post/git-log-goodies/'>
 <meta property='og:site_name' content='Develicious'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content='2018-08-20T00:35:13Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@IvanBPortugal'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='git'><meta property='article:tag' content='log'><meta property='article:tag' content='graph'><meta property='article:published_time' content='2018-08-20T00:35:13Z'/><meta property='article:modified_time' content='2018-08-20T00:35:13Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@IvanBPortugal'>
 
 <meta name="generator" content="Hugo 0.47" />
 
-  <title>Posts • Develicious</title>
-  <link rel='canonical' href='https://ivanportugal.github.io/bloghugo/post/'>
-  
-    <link href="https://ivanportugal.github.io/bloghugo/post/index.xml" rel="alternate" type="application/rss+xml" title="Develicious" />
+  <title>Git Log Goodies • Develicious</title>
+  <link rel='canonical' href='https://ivanportugal.github.io/bloghugo/post/git-log-goodies/'>
   
   
   <link rel='icon' href='/bloghugo/favicon.ico'>
@@ -36,7 +38,7 @@
 </head>
 
 
-<body class='section type-post has-sidebar'>
+<body class='page type-post has-sidebar'>
 
   <div class='site'>
 
@@ -160,79 +162,105 @@
       <main id='content'>
 
 
-<header class='header'>
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>Posts</h1>
-
+      <h1 class='title'>Git Log Goodies</h1>
       
 
     </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-08-20T00:35:13Z'>2018, Aug 20</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+One min read
+</span>
+
+
+  
+  
+</div>
+
+
   </div>
 </header>
 
-
-
-
-<div class='container list-container'>
-  <ul class='list'>
-    
-      <li class='item'>
-  <div class='meta'>
-    <span>
-  <span class='screen-reader-text'>Posted on </span>
-  <time datetime='2018-08-20T00:35:13Z'>2018, Aug 20</time>
-</span>
-
-  </div>
-  <header class='item-header'>
-    <h3 class='item-title'>
-      <a href='/bloghugo/post/git-log-goodies/'>Git Log Goodies
-      </a>
-    </h3>
-  </header>
-</li>
-
-    
-      <li class='item'>
-  <div class='meta'>
-    <span>
-  <span class='screen-reader-text'>Posted on </span>
-  <time datetime='2015-10-31T15:11:05-05:00'>2015, Oct 31</time>
-</span>
-
-  </div>
-  <header class='item-header'>
-    <h3 class='item-title'>
-      <a href='/bloghugo/post/go-kick-the-webs-butt/'>Go kick the web&#39;s butt <span class="deprecated_title">(deprecated)</span> 
-      </a>
-    </h3>
-  </header>
-</li>
-
-    
-      <li class='item'>
-  <div class='meta'>
-    <span>
-  <span class='screen-reader-text'>Posted on </span>
-  <time datetime='2015-10-22T15:57:05-05:00'>2015, Oct 22</time>
-</span>
-
-  </div>
-  <header class='item-header'>
-    <h3 class='item-title'>
-      <a href='/bloghugo/post/discovery/'>Discovery
-      </a>
-    </h3>
-  </header>
-</li>
-
-    
-  </ul>
-
+  
   
 
+  <div class='container entry-content'>
+  <p>I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of &ldquo;capability ceiling:&hellip; There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: <a href="https://git-scm.com/download/gui/windows" title="Git Guis" target="_blank">https://git-scm.com/download/gui/windows</a></p>
+
+<p>However, the command line is <em>significantly</em> more powerful. Here is a handy-fancy git log with a graph. Add this to your <code>.gitconfig</code>:</p>
+
+<pre><code>[alias]
+    lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+    lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit
+</code></pre>
+
+<p>Then, try it out!</p>
+
+<pre><code>git lg1
+</code></pre>
+
+<p><img src="/img/Screen Shot 2018-08-19 at 8.45.53 PM.png" alt="Git Log Graph Sample" title="Git Log Graph Sample" /></p>
+
 </div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/bloghugo/tags/git'>Git</a>, <a class='tag' href='/bloghugo/tags/log'>Log</a>, <a class='tag' href='/bloghugo/tags/graph'>Graph</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/bloghugo/post/go-kick-the-webs-butt/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Go kick the web&#39;s butt</a>
+    </div></div>
+</nav>
+
+
+
 
       </main>
 
@@ -292,4 +320,25 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
