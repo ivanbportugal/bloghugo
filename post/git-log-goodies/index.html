@@ -28,6 +28,17 @@ However, the command line is significantly more powerful. Here is a handy-fancy 
 :root{--color-accent:#3F89C1;}
 </style>
 
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-69208034-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -113,7 +124,40 @@ However, the command line is significantly more powerful. Here is a handy-fancy 
 </a>
       </li></ul>
   </nav>
-</section></div>
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/bloghugo/tags/angular' style='font-size:1em'>Angular</a>
+      </li><li>
+        <a href='/bloghugo/tags/blog' style='font-size:1em'>Blog</a>
+      </li><li>
+        <a href='/bloghugo/tags/discovery' style='font-size:1em'>Discovery</a>
+      </li><li>
+        <a href='/bloghugo/tags/git' style='font-size:2em'>Git</a>
+      </li><li>
+        <a href='/bloghugo/tags/golang' style='font-size:1em'>Golang</a>
+      </li><li>
+        <a href='/bloghugo/tags/graph' style='font-size:1em'>Graph</a>
+      </li><li>
+        <a href='/bloghugo/tags/hugo' style='font-size:1em'>Hugo</a>
+      </li><li>
+        <a href='/bloghugo/tags/javascript' style='font-size:1em'>Javascript</a>
+      </li><li>
+        <a href='/bloghugo/tags/log' style='font-size:1em'>Log</a>
+      </li><li>
+        <a href='/bloghugo/tags/martini' style='font-size:1em'>Martini</a>
+      </li><li>
+        <a href='/bloghugo/tags/nodejs' style='font-size:1em'>Nodejs</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
 
   <div class='sidebar-overlay'></div>
 </div>
@@ -214,7 +258,7 @@ One min read
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>alias<span style="color:#f92672">]</span>
     lg1 <span style="color:#f92672">=</span> log --graph --all --format<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&#39;</span> --abbrev-commit --date<span style="color:#f92672">=</span>relative
     lg2 <span style="color:#f92672">=</span> log --graph --all --format<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&#39;&#39;          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&#39;</span> --abbrev-commit</code></pre></div>
-<p>Then, try it out!</p>
+<p>Then, try it out! 😋</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git lg1</code></pre></div>
 <p><img src="/bloghugo/img/GitLogGraphSample.png" alt="Git Log Graph Sample" /></p>
 

@@ -27,13 +27,14 @@ However, the command line is significantly more powerful. Here is a handy-fancy 
       <pubDate>Sat, 18 Aug 2018 19:11:39 +0000</pubDate>
       
       <guid>https://ivanportugal.github.io/bloghugo/about/</guid>
-      <description>Skills
+      <description> Skills
 Angular, HTML5, SASS, CSS3, Java, C#, .NET MVC, Sql Server 2016, RabbitMQ, Oracle SQL, Java Spring Boot, Maven, Jenkins, Git.
-Goals
+ Goals
 To continue to cultivate my passion for web technologies and make a tremendous impact wherever I work.
-Specialties
+ Specialties
 UI Development: Angular 6+, PWA, Ionic, SASS/CSS3, HTML5.
-.NET MVC, Java Spring Boot.</description>
+.NET MVC, Java Spring Boot.
+  </description>
     </item>
     
     <item>

@@ -21,5 +21,17 @@ However, the command line is significantly more powerful. Here is a handy-fancy 
 [alias] lg1 = log --graph --all --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&amp;#39; --abbrev-commit --date=relative lg2 = log --graph --all --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&amp;#39;&amp;#39; %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&amp;#39; --abbrev-commit Then, try it out!</description>
     </item>
     
+    <item>
+      <title>Go kick the web&#39;s butt</title>
+      <link>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</link>
+      <pubDate>Sat, 31 Oct 2015 15:11:05 -0500</pubDate>
+      
+      <guid>https://ivanportugal.github.io/bloghugo/post/go-kick-the-webs-butt/</guid>
+      <description>Intro After getting introduced to Go, I&amp;rsquo;ve fallen in love&amp;hellip; Without making this corny, I really wanted to explore what the platform/language can do immediately. I&amp;rsquo;m sorta done with Hello World projects and going through examples of the language so I&amp;rsquo;d like to present a more-or-less real-world example.
+Technologies used: - Go - Martini - Nodejs - Grunt - Bower
+Pseudo real-world Go Project
+Why Nodejs too? I love web technologies.</description>
+    </item>
+    
   </channel>
 </rss>

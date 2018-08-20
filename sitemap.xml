@@ -63,12 +63,6 @@
   </url>
   
   <url>
-    <loc>https://ivanportugal.github.io/bloghugo/tags/github/</loc>
-    <lastmod>2015-10-31T15:11:05-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ivanportugal.github.io/bloghugo/tags/golang/</loc>
     <lastmod>2015-10-31T15:11:05-05:00</lastmod>
     <priority>0</priority>
