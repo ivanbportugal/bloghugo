@@ -1,13 +1,12 @@
 +++
 author = "Ivan Portugal"
 date = "2018-08-20T00:35:13+00:00"
-draft = true
 post_date = "2018-08-19T04:00:00+00:00"
 tags = ["git", "log", "graph"]
 title = "Git Log Goodies"
 
 +++
-I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of ceiling... There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: [https://git-scm.com/download/gui/windows](https://git-scm.com/download/gui/windows "Git Guis")
+I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of "capability ceiling:... There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: [https://git-scm.com/download/gui/windows](https://git-scm.com/download/gui/windows "Git Guis")
 
 However, the command line is _significantly_ more powerful. Here is a handy-fancy git log with a graph. Add this to your `.gitconfig`:
 
@@ -18,3 +17,5 @@ However, the command line is _significantly_ more powerful. Here is a handy-fanc
 Then, try it out!
 
     git lg1
+
+![Git Log Graph Sample](/img/Screen Shot 2018-08-19 at 8.45.53 PM.png "Git Log Graph Sample")
