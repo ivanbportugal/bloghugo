@@ -16,9 +16,9 @@
       <pubDate>Mon, 20 Aug 2018 00:35:13 +0000</pubDate>
       
       <guid>https://ivanportugal.github.io/bloghugo/post/git-log-goodies/</guid>
-      <description>I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of &amp;ldquo;capability ceiling:&amp;hellip; There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: https://git-scm.com/download/gui/windows
+      <description>I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of &amp;ldquo;capability ceiling&amp;rdquo;&amp;hellip; There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: Git Guis
 However, the command line is significantly more powerful. Here is a handy-fancy git log with a graph. Add this to your .gitconfig:
-[alias] lg1 = log --graph --all --format=format:&#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&#39; --abbrev-commit --date=relative lg2 = log --graph --all --format=format:&#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&#39;&#39; %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&#39; --abbrev-commit  Then, try it out!</description>
+[alias] lg1 = log --graph --all --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&amp;#39; --abbrev-commit --date=relative lg2 = log --graph --all --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&amp;#39;&amp;#39; %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&amp;#39; --abbrev-commit Then, try it out!</description>
     </item>
     
     <item>

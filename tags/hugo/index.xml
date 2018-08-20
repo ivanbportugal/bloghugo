@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Develicious</title>
+    <link>https://ivanportugal.github.io/bloghugo/tags/hugo/</link>
+    <description>Recent content in Hugo on Develicious</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 22 Oct 2015 15:57:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://ivanportugal.github.io/bloghugo/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Discovery</title>
+      <link>https://ivanportugal.github.io/bloghugo/post/discovery/</link>
+      <pubDate>Thu, 22 Oct 2015 15:57:05 -0500</pubDate>
+      
+      <guid>https://ivanportugal.github.io/bloghugo/post/discovery/</guid>
+      <description>Well it looks like I keep starting new blogs over and over again but really I’m just playing around with what I think is neat. Since I love web technologies, fiddling around with Ghost, Medium, and other “cutting edge” blog platforms is really just a matter of self-discovery. I think I’ve settled on HUGO for the long term but we will see if someone comes up with something truly revolutionary in the future that will force me to reconsider.</description>
+    </item>
+    
+  </channel>
+</rss>
