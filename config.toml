@@ -59,7 +59,8 @@ sidebar = ["about","search","sidebar_menu","social_menu","taxonomy_cloud"]
 footer = ["social_menu"]
 
 [sidebar_menu]
-mirror = "main_menu"
+title = ""
+mirror = ""
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
@@ -108,6 +109,9 @@ client = "fuse" # algolia / fuse / lunr
 # appId = ""
 # indexName = ""
 # searchApiKey = ""
+
+[params.chart]
+
 
 [taxonomies]
 author = "authors"
