@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Develicious</title>
+    <title>Home on Develicious</title>
     <link>https://ivanportugal.com/</link>
-    <description>Recent content on Develicious</description>
+    <description>Recent content in Home on Develicious</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Aug 2018 00:35:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Aug 2018 19:11:39 +0000</lastBuildDate>
     
 	<atom:link href="https://ivanportugal.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://ivanportugal.com/about/</link>
+      <pubDate>Sat, 18 Aug 2018 19:11:39 +0000</pubDate>
+      
+      <guid>https://ivanportugal.com/about/</guid>
+      <description>Goals To continue to cultivate my passion for web technologies and make a tremendous impact wherever I work.
+Realm of Technical Knowledge    Front End Back End Database     Angular Java Oracle   HTML5 Spring Boot SQL Server   SASS C# BoltDB   CSS3 .NETMVC CockroachDB   Ionic Maven    Flutter Jenkins    PWA GoLang     Confidence Levels Over Time { &amp;#34;type&amp;#34;: &amp;#34;line&amp;#34;, &amp;#34;data&amp;#34;: { &amp;#34;labels&amp;#34;: [&amp;#34;2008&amp;#34;, &amp;#34;2010&amp;#34;, &amp;#34;2012&amp;#34;, &amp;#34;2014&amp;#34;, &amp;#34;2016&amp;#34;, &amp;#34;2018&amp;#34;], &amp;#34;datasets&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;Java Services&amp;#34;, &amp;#34;data&amp;#34;: [1, 4, 5, 6, 7, 9], &amp;#34;backgroundColor&amp;#34;:&amp;#34;transparent&amp;#34;, &amp;#34;borderColor&amp;#34;:&amp;#34;blue&amp;#34; }, { &amp;#34;label&amp;#34;: &amp;#34;Java Swing&amp;#34;, &amp;#34;data&amp;#34;: [0.</description>
+    </item>
     
     <item>
       <title>Git Log Goodies</title>
@@ -19,16 +29,6 @@
       <description>I have always found that learning Git was easier with a GUI but I always seemed to keep hitting some sort of &amp;ldquo;capability ceiling&amp;rdquo;&amp;hellip; There are several out there and I particularly enjoyed SourceTree from Atlassian and GitKraken from Axosoft. Here are some others: Git Guis
 However, the command line is significantly more powerful. Here is a handy-fancy git log with a graph. Add this to your .gitconfig:
 [alias] lg1 = log --graph --all --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)&amp;#39; --abbrev-commit --date=relative lg2 = log --graph --all --format=format:&amp;#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&amp;#39;&amp;#39; %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&amp;#39; --abbrev-commit Then, try it out!</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://ivanportugal.com/about/</link>
-      <pubDate>Sat, 18 Aug 2018 19:11:39 +0000</pubDate>
-      
-      <guid>https://ivanportugal.com/about/</guid>
-      <description>Goals To continue to cultivate my passion for web technologies and make a tremendous impact wherever I work.
-Realm of Technical Knowledge    Front End Back End Database     Angular Java Oracle   HTML5 Spring Boot SQL Server   SASS C# BoltDB   CSS3 .NETMVC CockroachDB   Ionic Maven    Flutter Jenkins    PWA GoLang     Confidence Levels Over Time { &amp;#34;type&amp;#34;: &amp;#34;line&amp;#34;, &amp;#34;data&amp;#34;: { &amp;#34;labels&amp;#34;: [&amp;#34;2008&amp;#34;, &amp;#34;2010&amp;#34;, &amp;#34;2012&amp;#34;, &amp;#34;2014&amp;#34;, &amp;#34;2016&amp;#34;, &amp;#34;2018&amp;#34;], &amp;#34;datasets&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;Java Services&amp;#34;, &amp;#34;data&amp;#34;: [1, 4, 5, 6, 7, 9], &amp;#34;backgroundColor&amp;#34;:&amp;#34;transparent&amp;#34;, &amp;#34;borderColor&amp;#34;:&amp;#34;blue&amp;#34; }, { &amp;#34;label&amp;#34;: &amp;#34;Java Swing&amp;#34;, &amp;#34;data&amp;#34;: [0.</description>
     </item>
     
     <item>
@@ -50,6 +50,15 @@ Why Nodejs too? I love web technologies.</description>
       
       <guid>https://ivanportugal.com/post/discovery/</guid>
       <description>Well it looks like I keep starting new blogs over and over again but really I’m just playing around with what I think is neat. Since I love web technologies, fiddling around with Ghost, Medium, and other “cutting edge” blog platforms is really just a matter of self-discovery. I think I’ve settled on HUGO for the long term but we will see if someone comes up with something truly revolutionary in the future that will force me to reconsider.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://ivanportugal.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ivanportugal.com/search/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ivanportugal.com/post/git-log-goodies/</loc>
-    <lastmod>2018-08-20T00:35:13+00:00</lastmod>
+    <loc>https://ivanportugal.com/</loc>
+    <lastmod>2018-08-18T19:11:39+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ivanportugal.com/about/</loc>
     <lastmod>2018-08-18T19:11:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/post/git-log-goodies/</loc>
+    <lastmod>2018-08-20T00:35:13+00:00</lastmod>
   </url>
   
   <url>
@@ -41,12 +46,6 @@
   
   <url>
     <loc>https://ivanportugal.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivanportugal.com/</loc>
-    <lastmod>2018-08-20T00:35:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -105,9 +104,18 @@
   </url>
   
   <url>
+    <loc>https://ivanportugal.com/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ivanportugal.com/post/</loc>
     <lastmod>2018-08-20T00:35:13+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivanportugal.com/search/</loc>
   </url>
   
   <url>

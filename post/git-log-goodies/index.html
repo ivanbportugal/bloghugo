@@ -86,7 +86,15 @@ if (!doNotTrack) {
     </label></form>
 
 </section>
-<section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/about/'>About</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
     <ul><li>
         <a href='https://github.com/ivanbportugal' target='_blank' rel='noopener'>
           <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
@@ -260,7 +268,7 @@ One min read
     lg2 <span style="color:#f92672">=</span> log --graph --all --format<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#39;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&#39;&#39;          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)&#39;</span> --abbrev-commit</code></pre></div>
 <p>Then, try it out! 😋</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git lg1</code></pre></div>
-<p><img src="/bloghugo/img/GitLogGraphSample.png" alt="Git Log Graph Sample" /></p>
+<p><img src="/img/GitLogGraphSample.png" alt="Git Log Graph Sample" /></p>
 
 </div>
 
