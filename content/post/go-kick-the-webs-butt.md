@@ -1,12 +1,12 @@
-+++
-date = "2015-10-31T15:11:05-05:00"
-title = "Go kick the web's butt"
-tags = ["git", "nodejs", "angular", "golang", "javascript", "martini"]
-author = "Ivan Portugal"
+---
+date: "2015-10-31T15:11:05-05:00"
+title: "Go kick the web's butt"
+tags: ["git", "nodejs", "angular", "golang", "javascript", "martini"]
+author: "Ivan Portugal"
 
-deprecated = true
+deprecated: true
 
-+++
+---
 
 ## Intro
 After getting introduced to [Go](https://golang.org/), I've fallen in love... Without making this corny, I really wanted to explore what the platform/language can do *immediately*. I'm sorta done with Hello World projects and going through examples of the language so I'd like to present a more-or-less real-world example.

@@ -1,13 +1,16 @@
-+++
-author = "Ivan Portugal"
-comments = false
-date = "2018-08-18T19:11:39+00:00"
-title = "About"
-chart = true
+---
+author: "Ivan Portugal"
+comments: false
+date: "2018-08-18T19:11:39+00:00"
+title: "About"
+chart: true
 
-[menu.main]
-weight = 2
-+++
+menu:
+  - main
+  - sidebar
+weight: -260
+---
+
 
 ### Goals
 To continue to cultivate my passion for web technologies and make a tremendous impact wherever I work.
