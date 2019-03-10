@@ -1,173 +1,90 @@
-baseurl = "https://ivanportugal.com"
-title = "Develicious"
-# for smart copyright line, leave this blank and check [params.copyright]
-copyright = ""
-
-theme = "engimo"
-
-disqusShortname = ""
-googleAnalytics = "UA-69208034-1"
-
 Paginate = 5
-preserveTaxonomyNames = true
-
-enableRobotsTXT = true # generate robots.txt
-
-# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
-pygmentsCodefences = true
-
-enableEmoji = true
-
-# Missing translations will default to this content language
+baseurl = "https://ivanportugal.com"
+copyright = ""
 defaultContentLanguage = "en"
-
+disqusShortname = ""
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = "UA-69208034-1"
+preserveTaxonomyNames = true
+pygmentsCodefences = true
+theme = "engimo"
+title = "Develicious"
+[blackfriday]
+hrefTargetBlank = true
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
+[[menu.main]]
+name = "Jump In Line"
+url = "https://jumpinline.ivanportugal.com"
+weight = 4
+[[menu.main]]
+name = "BSearch"
+url = "https://bsearch.ivanportugal.com/"
+weight = 3
+[params.assets]
+favicon = "favicon.ico"
+gopher = ""
+[params.chart]
+[params.comments]
+enable = false
+[params.comments.staticman]
+apiEndpoint = "https://api.staticman.net/v2/entry"
+enable = false
+maxDepth = 2
+[params.comments.utterances]
+enable = false
+issueTerm = "pathname"
+[params.comments.utterances.github]
+repository = "bloghugo"
+username = "ivanbportugal"
+[params.copyright]
+holder = "Ivan Portugal"
+prefix = ""
+startYear = "2018"
+suffix = "All Rights Reserved"
 [params.info]
 description = "Just a few potentially helpful snippets"
 title404 = "Nothing's here!"
-
-[params.assets]
-
-favicon = "favicon.ico"
-# customCSS = ["css/custom.css"]
-# customJS = ["js/custom.js"]
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
-
-[params.copyright]
-prefix = ""
-holder = "Ivan Portugal"
-startYear = "2018"
-suffix = "All Rights Reserved"
-
-[params.settings]
-# date & time format: https://golang.org/pkg/time/
-dateFormat = "2006, Jan 02"
-listDateFormat = "2006, Jan 02"
-archiveDateFormat = "Jan 02"
-hideEntryNavigation = ["page"] # boolean / array of sections
-showReadingTime = true
-taxonomyCloudShuffle = true
-accentColor = "#3F89C1"
-hideMainMenu = false
-
-[params.sidebar]
-enable = true
-
-[params.widgets]
-homepage = ["recent_posts"]
-sidebar = ["about","search","sidebar_menu","social_menu","taxonomy_cloud"]
-# sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
-footer = ["social_menu"]
-
-[sidebar_menu]
-title = ""
-mirror = ""
-
 [params.opengraph.facebook]
-admins = [] # array of Facebook IDs
+admins = []
 appID = ""
 pageID = ""
-
 [params.opengraph.twitter]
-page = "IvanBPortugal" # Twitter page username
-
-[params.seo]
-# Title Separator: - – — · • * ⋆ | ~ « » < >
-titleSeparator = "•"
-
-[params.social]
-linkedin = "ivanportugal"
-github = "ivanbportugal"
-email = "ivanbportugal@hotmail.com"
-twitter = "ivanbportugal"
-
-[params.comments]
-enable = false
-
-[params.comments.staticman]
-enable = false
-apiEndpoint = "https://api.staticman.net/v2/entry"
-maxDepth = 2
-
-# [params.comments.staticman.github]
-# username = "achary"
-# repository = "engimo"
-# branch = "master"
-
-# Utterances: https://utteranc.es
-[params.comments.utterances]
-enable = false
-issueTerm = "pathname" # pathname / url / title
-
-[params.comments.utterances.github]
-username = "ivanbportugal"
-repository = "bloghugo"
-
+page = "IvanBPortugal"
 [params.search]
-client = "fuse" # algolia / fuse / lunr
-
-# [params.search.algolia]
-# appId = ""
-# indexName = ""
-# searchApiKey = ""
-
-[params.chart]
-
-
+client = "fuse"
+[params.seo]
+titleSeparator = "•"
+[params.settings]
+accentColor = "#3F89C1"
+archiveDateFormat = "Jan 02"
+dateFormat = "2006, Jan 02"
+hideEntryNavigation = ["page"]
+hideMainMenu = false
+listDateFormat = "2006, Jan 02"
+showReadingTime = true
+taxonomyCloudShuffle = true
+[params.sidebar]
+enable = true
+[params.social]
+email = "ivanbportugal@hotmail.com"
+github = "ivanbportugal"
+linkedin = "ivanportugal"
+twitter = "ivanbportugal"
+[params.widgets]
+footer = ["social_menu"]
+homepage = ["recent_posts"]
+sidebar = ["about", "search", "sidebar_menu", "social_menu", "taxonomy_cloud"]
+[permalinks]
+page = "/:slug/"
+[sidebar_menu]
+mirror = ""
+title = ""
 [taxonomies]
 author = "authors"
 category = "categories"
 series = "series"
 tag = "tags"
-
-[permalinks]
-page = "/:slug/"
-
-[[menu.main]]
-name = "BSearch"
-url = "https://bsearch.ivanportugal.com/"
-weight = 300
-
-[blackfriday]
-hrefTargetBlank = true
-
-[languages]
-# edit this block for your own language
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
-
-
-# OLD
-# Copyright = "2018 - All Rights Reserved"
-# baseurl = "https://ivanportugal.com/"
-# canonifyurls = true
-# googleAnalytics = "UA-69208034-1"
-# languageCode = "en-us"
-# paginate = 5
-# theme = "hugo-cactus-theme"
-# title = "Ramblings of a Software Developer"
-# [[menu.main]]
-# name = "BSearch"
-# url = "https://bsearch.ivanportugal.com/"
-# weight = 1
-# [[menu.main]]
-# identifier = "blog"
-# name = "Ivan Portugal Blog"
-# url = "/"
-# weight = 1
-# [params]
-# author = "Ivan Portugal"
-# authorlocation = "Charlotte, North Carolina"
-# authorwebsite = "https://ivanportugal.com"
-# bio = "web tech enthusiast"
-# cover = "img/IvanSkydiving.jpg"
-# description = "web tech enthusiast"
-# githubName = "ivanbportugal"
-# googleAnalyticsUserID = "UA-69208034-1"
-# iconFont = "mono-social"
-# logo = "img/smiley.png"
-# name = "Ivan Portugal"
-# socialIconStyle = "circle"
-# [social]
-# linkedin = "https://linkedin.com/in/ivanportugal"

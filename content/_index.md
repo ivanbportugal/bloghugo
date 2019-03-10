@@ -1,9 +1,11 @@
 ---
 title: Home
-menu:
-  - main
-  - sidebar
 weight: -270
----
+menu:
+  sidebar:
+    weight: 2
+  main:
+    weight: 2
 
+---
 > by Ivan Portugal

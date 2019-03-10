@@ -1,17 +1,17 @@
 ---
-author: "Ivan Portugal"
+author: Ivan Portugal
 comments: false
-date: "2018-08-18T19:11:39+00:00"
-title: "About"
+date: 2018-08-18 19:11:39 +0000
+title: About
 chart: true
-
-menu:
-  - main
-  - sidebar
 weight: -260
+menu:
+  sidebar:
+    weight: 1
+  main:
+    weight: 1
+
 ---
-
-
 ### Goals
 To continue to cultivate my passion for web technologies and make a tremendous impact wherever I work.
 
