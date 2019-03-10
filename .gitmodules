@@ -1,0 +1,3 @@
+[submodule "themes/enigmo"]
+	path = themes/enigmo
+	url = https://github.com/achary/engimo.git
