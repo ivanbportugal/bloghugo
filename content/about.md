@@ -7,9 +7,9 @@ chart: true
 weight: -260
 menu:
   sidebar:
-    weight: 1
+    weight: 2
   main:
-    weight: 1
+    weight: 2
 
 ---
 ### Goals

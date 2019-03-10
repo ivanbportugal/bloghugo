@@ -3,9 +3,9 @@ title: Home
 weight: -270
 menu:
   sidebar:
-    weight: 2
+    weight: 1
   main:
-    weight: 2
+    weight: 1
 
 ---
 > by Ivan Portugal
